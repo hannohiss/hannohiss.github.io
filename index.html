@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanno Hiss</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: #fff;
+      color: #1a1a1a;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 2rem 5rem;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    header .sub {
+      margin-top: 0.35rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    header img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .bio {
+      margin-bottom: 2.5rem;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-bottom: 2.25rem;
+    }
+
+    section h2 {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #999;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 1.1rem;
+    }
+
+    .entry {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-left {
+      flex: 1;
+      display: flex;
+      gap: 0.65rem;
+      align-items: flex-start;
+    }
+
+    .entry-logo {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .entry-logo-dark {
+      background: #1a1a1a;
+      border-radius: 3px;
+      padding: 3px;
+    }
+
+    .entry-body {
+      flex: 1;
+    }
+
+    .entry-title {
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .entry-desc {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.1rem;
+    }
+
+    .entry-date {
+      font-size: 0.8rem;
+      color: #aaa;
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding-top: 0.2rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e0e0e0;
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    a {
+      color: #1a1a1a;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+
+    a:hover {
+      border-bottom-color: #1a1a1a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <h1>Hanno Hiss</h1>
+      <div class="sub">Large-scale AI, reinforcement learning, and building robots.</div>
+    </div>
+    <img src="headshot.jpg" alt="Hanno Hiss">
+  </header>
+
+  <p class="bio">
+    I am finishing my MSc in Data Science at ETH Zurich with a thesis on reasoning models for math at the
+    <img src="sri-mark.svg" alt="SRI" style="height:1em;vertical-align:middle;margin:0 2px;"> <a
+      href="https://www.sri.inf.ethz.ch/" target="_blank">SRI</a> lab. Before that I interned at <img src="qc.svg"
+      alt="QuantCo"
+      style="height:1em;vertical-align:middle;background:#1a1a1a;border-radius:2px;padding:1px 3px;margin:0 1px;"> <a
+      href="https://www.quantco.com/" target="_blank">QuantCo</a>, working on statistical models for insurance and
+    claims handling.<br>
+    I was fortunate to be selected for an exchange semester at <img src="MIT_2023_red_logo.svg" alt="MIT" style="height:1em;vertical-align:middle;margin:0 2px;"> <a href="https://www.mit.edu/" target="_blank">MIT</a>, where my interest in AI, statistical learning, and
+    embodied AI deepened. Previously I studied Electrical Engineering at ETH, where I also joined <img
+      src="swissloop.png" alt="Swissloop" style="height:1em;vertical-align:middle;border-radius:2px;margin:0 1px;"> <a
+      href="https://swissloop.ch/prototypes/lavinia-heisenberg/" target="_blank">Swissloop</a>
+    and built vehicle control and sensors for a hyperloop prototype.
+  </p>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="entry-left">
+        <div class="entry-body">
+          <span class="entry-title">Quality-Ranked Training on Easy Reasoning Problems</span>
+          <p class="entry-desc">Going beyond the RLVR paradigm for training math reasoning models. At <a
+              href="https://www.sri.inf.ethz.ch/" target="_blank">SRI, ETH Zurich</a> with Jasper Dekoninck and Prof.
+            Martin Vechev.</p>
+        </div>
+      </div>
+      <span class="entry-date">Now</span>
+    </div>
+    <div class="entry">
+      <div class="entry-left">
+        <div class="entry-body">
+          <span class="entry-title"><a href="https://github.com/hannohiss/Petra2dplus" target="_blank">RL for
+              PETRA</a></span>
+          <p class="entry-desc">RL framework for the Petrol Station Replenishment Problem with <a
+              href="https://www.arqh.ai/" target="_blank">Arqh.ai</a>.</p>
+        </div>
+      </div>
+      <span class="entry-date">2025</span>
+    </div>
+    <div class="entry">
+      <div class="entry-left">
+        <div class="entry-body">
+          <span class="entry-title"><a href="https://github.com/severinbratus/pmlr25-lpn" target="_blank">Meta-learning
+              with LPN</a></span>
+          <p class="entry-desc">Latent Program Networks for explicit meta-optimization, inspired by ARC-AGI.</p>
+        </div>
+      </div>
+      <span class="entry-date">2025</span>
+    </div>
+    <div class="entry">
+      <div class="entry-left">
+        <div class="entry-body">
+          <span class="entry-title"><a href="https://github.com/hannohiss/deeppoly-rtai"
+              target="_blank">DeepPoly</a></span>
+          <p class="entry-desc">Certifying neural networks for Reliable and Trustworthy AI, ETH Zurich.</p>
+        </div>
+      </div>
+      <span class="entry-date">2025</span>
+    </div>
+    <div class="entry">
+      <div class="entry-left">
+        <div class="entry-body">
+          <span class="entry-title">MARL on <a href="https://github.com/mlech26l/gigastep"
+              target="_blank">Gigastep</a></span>
+          <p class="entry-desc">Recurrent PPO in JAX for multi-agent RL. Research at MIT, Prof. Daniela Rus' lab.</p>
+        </div>
+      </div>
+      <span class="entry-date">2024</span>
+    </div>
+  </section>
+
+  <footer>
+    <a href="mailto:hannohiss@me.com">hannohiss@me.com</a>
+    <a href="https://github.com/hannohiss" target="_blank">github.com/hannohiss</a>
+  </footer>
+
+</body>
+
+</html>
