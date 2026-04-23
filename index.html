@@ -31,13 +31,8 @@
     }
 
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem;
-      padding-bottom: 1.75rem;
-      border-bottom: 1px solid #e0e0e0;
       margin-bottom: 2rem;
+      overflow: hidden;
     }
 
     header h1 {
@@ -47,25 +42,26 @@
       line-height: 1.2;
     }
 
-    header .sub {
-      margin-top: 0.35rem;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    header img {
+    header > img {
       width: 160px;
       height: 160px;
       object-fit: cover;
       object-position: center top;
       border-radius: 4px;
-      flex-shrink: 0;
+      float: right;
+      margin-left: 1.5rem;
+      margin-bottom: 0.5rem;
     }
 
     .bio {
-      margin-bottom: 2.5rem;
+      margin-top: 0.75rem;
       color: #444;
       font-size: 0.95rem;
+    }
+
+    .bio-break {
+      display: block;
+      height: 0.6em;
     }
 
     section {
@@ -162,14 +158,32 @@
 <body>
 
   <header>
-    <div>
-      <h1>Hanno Hiss</h1>
-      <div class="sub">Large-scale AI, reinforcement learning, and robots.</div>
-    </div>
     <img src="headshot.jpg" alt="Hanno Hiss">
+    <h1>Hanno Hiss</h1>
+    <p class="bio">
+      I'm currently building something new.<span class="bio-break"></span>
+      Previously, I studied at <img src="eth-logo-pos.png" alt="ETH"
+        style="height:1em;vertical-align:middle;margin:0 2px;"> <a href="https://ethz.ch/" target="_blank">ETH
+        Zurich</a> and <img src="MIT_2023_red_logo.svg" alt="MIT"
+        style="height:1em;vertical-align:middle;margin:0 2px;"> <a href="https://www.mit.edu/"
+        target="_blank">MIT</a>, graduating with an MSc in Data Science (minor in Robotics). My thesis was advised
+      by <a href="https://scholar.google.com/citations?user=aZ1Rh50AAAAJ&hl=en" target="_blank">Prof. Martin
+        Vechev</a> at <img src="sri-mark.svg" alt="SRI" style="height:1em;vertical-align:middle;margin:0 2px;"> <a
+        href="https://www.sri.inf.ethz.ch/" target="_blank">SRI</a>. I've also worked at <img src="qc.svg"
+        alt="QuantCo"
+        style="height:1em;vertical-align:middle;background:#1a1a1a;border-radius:2px;padding:1px 3px;margin:0 1px;">
+      <a href="https://www.quantco.com/" target="_blank">QuantCo</a> on statistical models for insurance. Before
+      that I joined <img src="swissloop.png" alt="Swissloop"
+        style="height:1em;vertical-align:middle;border-radius:2px;margin:0 1px;"> <a href="https://swissloop.ch/"
+        target="_blank">Swissloop</a> to build vehicle control and sensors for the future of transportation.<span
+        class="bio-break"></span>
+      I've long been drawn to where learning systems meet the physical world, especially reinforcement learning
+      and robotics, and I care most about using them to build things that matter.<span class="bio-break"></span>
+      Outside of work, I like running marathons and cooking.
+    </p>
   </header>
 
-  <p class="bio">
+  <!-- <p class="bio">
     I graduated MSc in Data Science with a minor in Robotics at ETH Zurich, writing my thesis on reasoning models
     for math at the
     <img src="sri-mark.svg" alt="SRI" style="height:1em;vertical-align:middle;margin:0 2px;"> <a
@@ -184,17 +198,17 @@
       href="https://swissloop.ch/prototypes/lavinia-heisenberg/" target="_blank">Swissloop</a>
     and built vehicle control and sensors for a hyperloop prototype.<br>
     I am interested in entrepreneurship and building for a better future.
-  </p>
-
+  </p> -->
+  
   <section>
     <h2>Projects</h2>
     <div class="entry">
       <div class="entry-left">
         <div class="entry-body">
-          <span class="entry-title">Quality-Ranked Training on Easy Reasoning Problems</span>
-          <p class="entry-desc">Going beyond the RLVR paradigm for training math reasoning models. At <a
-              href="https://www.sri.inf.ethz.ch/" target="_blank">SRI, ETH Zurich</a> with Jasper Dekoninck and Prof.
-            Martin Vechev.</p>
+          <span class="entry-title">MSc Thesis: Quality-Ranked Training on Easy Reasoning Problems</span>
+          <p class="entry-desc">Going beyond the RLVR paradigm for training math reasoning models. At SRI, ETH Zurich with Jasper
+            Dekoninck and <a href="https://scholar.google.com/citations?user=aZ1Rh50AAAAJ&hl=en" target="_blank">Prof.
+              Martin Vechev</a>.</p>
         </div>
       </div>
       <span class="entry-date">Now</span>
